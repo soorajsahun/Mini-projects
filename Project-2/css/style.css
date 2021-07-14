@@ -1,0 +1,223 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px
+}
+html{
+    scroll-behavior: smooth;    /*if we tap navigation bar then it takes to that section*/
+}
+/* css variables */
+
+#navbar{
+    position: sticky;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 54px;
+    top: 0%;
+    z-index: 2;
+    opacity: 0.8;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;     
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* Navigation bar:logo and image */
+#logo{
+    margin: 10px;
+    width: 77px;
+}
+#logo img{
+    margin: 1px 28px;
+    width: 50px;
+    height: 50px;
+}
+/* Navigation bar:list styling */
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 24px;
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{
+    padding: 5px;
+    margin: 0px 10px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 254);
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 428px;
+    color: white;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(https://source.unsplash.com/daily?food) no-repeat center center/cover;
+    /* background: url(../bg.png); */      /*Double dot is used to come out of folder*/
+    position: absolute;
+    height: 78%;
+    top: 0px;
+    left: 0px;
+    width: 100%;     
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/* service section */
+#services{
+    display: flex;
+    margin: 37px;
+}
+#services-container{
+    position: relative;
+}
+#services-container::before{
+    content: "";
+    background: url(https://source.unsplash.com/1600x900/?vegan) no-repeat center center/cover;
+    position: absolute;
+    height: 109%;
+    top: 0%;
+    left: 0%;
+    width: 100%;     
+    z-index: -1;
+    opacity: 0.7;
+}
+#services .box{
+    border: solid 2px brown;
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 23px;
+    background: rgb(216, 215, 215);
+}
+#services .box img{
+    display: block;
+    width: 26%;
+    margin: auto;
+    height: 119px;
+}
+#services p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* client section */
+#client-section{
+    position: relative;
+    height: 350px;
+}
+#client-section::before{
+    content: "";
+    background: url(https://source.unsplash.com/1600x900/?client) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;     
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#clients img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url(https://source.unsplash.com/1600x900/?telephone) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;     
+    z-index: -1;
+    opacity: 0.7;
+}
+.contact-box input, 
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer section*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility class */
+.h-primary{
+    font-size: 3.4rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
